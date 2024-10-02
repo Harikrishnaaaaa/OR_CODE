@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better layout control */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Added font for better readability */
+}
+
+header {
+    background: #b721ff;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 120px); /* Adjust height for header and footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(19deg, #24d4fd 0%, #b721ff);
+    transition: background 0.3s; /* Animation for background change */
+}
+
+.main:hover {
+    background: linear-gradient(19deg, #b721ff 0%, #24d4fd); /* Hover effect */
+}
+
+h2 {
+    color: white;
+    margin: 15px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 15px;
+    outline: none;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0 10px;
+    transition: border-color 0.3s; /* Animation for input border */
+}
+
+input:focus {
+    border-color: #b721ff; /* Change border color on focus */
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin: 15px;
+    cursor: pointer;
+    outline: none;
+    background: #b721ff;
+    color: white;
+    border: none;
+    transition: background 0.3s; /* Animation for button */
+}
+
+button:hover {
+    background: #24d4fd; /* Change button color on hover */
+}
+
+.qr-image {
+    margin-top: 20px;
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    background: #b721ff;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
